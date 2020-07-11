@@ -1,1 +1,27 @@
-<app-dashheader></app-dashheader>
+<div class="card-deck">
+    <div class="card">
+        <img src="https://static.ferrovial.com/wp-content/uploads/sites/4/2020/04/29102347/imacor20200330_1001-1920x1280.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Active Cases</h5>
+          <h3 class="card-text">{{active}}</h3>
+          <p class="card-text"><small class="text-muted">Last updated  {{updated}}</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.deccanherald.com/sites/dh/files/article_images/2020/05/19/covid-19-4982910_1920-1266462619-1589715528.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Recovered</h5>
+          <h3 class="card-text">{{recovered}}</h3>
+          <p class="card-text"><small class="text-muted">Last updated {{updated}}</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://static.kent.ac.uk/media/news/2020/03/COVID-19_2871-e1583503638500-1920x1280.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Deaths</h5>
+          <h3 class="card-text">{{death}}</h3>
+          <p class="card-text"><small class="text-muted">Last updated {{updated}}</small></p>
+        </div>
+      </div>
+    
+  </div>

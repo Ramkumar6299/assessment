@@ -20,12 +20,25 @@ export class ServiceService {
     }
     return this.http.post("https://zen-user-api.herokuapp.com/users/authenticate",data);
   }
-
-  check():Observable<any>
+  register(data):Observable<any>
   {
-    return this.http.get("https://zen-user-api.herokuapp.com/users/authenticate");
+    return this.http.post("https://zen-user-api.herokuapp.com/users/register",data);
   }
-
-  
+  covid():Observable<any>
+  {
+    return this.http.get("https://covid19.mathdro.id/api/countries/india");
+  }
+  graph():Observable<any>
+  {
+    return this.http.get("https://5f047cf58b06d60016ddeb9a.mockapi.io/api/covidweeklystatus");
+  }
+  graph1():Observable<any>
+  {
+    return this.http.get("https://5f047cf58b06d60016ddeb9a.mockapi.io/api/currentweek");
+  }
+  table():Observable<any>
+  {
+    return this.http.get("https://5f047cf58b06d60016ddeb9a.mockapi.io/api/table");
+  }
 
 }

@@ -13,21 +13,21 @@ export class LoginComponent implements OnInit {
   userlogin = [];
   userform;
 
-  constructor(private service: ServiceService,private fb:FormBuilder) {
+  constructor(private service: ServiceService, private fb: FormBuilder) {
     this.userform = this.fb.group(
       {
-        'email' : this.fb.control(""),
-        'password' : this.fb.control("")
+        'email': this.fb.control(""),
+        'password': this.fb.control("")
       }
     )
   }
-  login()
-  {
+  login() {
     console.log(this.userform.value);
-    this.service.check().subscribe((data)=>console.log(data),(error)=>console.log(error))
-   // this.service.login(this.userform.value).subscribe((data) => { console.log(data) }, (err) => { console.log(err) }, () => { });
+    //this.service.check().subscribe((data)=>console.log(data),(error)=>console.log(error))
+    this.service.login(this.userform.value).subscribe((data) => 
+    { console.log(data); window.localStorage.setItem("user-token", data.token) },
+     (err) => { console.log(err) }, () => { });
   }
-
 
 
   ngOnInit(): void {
