@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { StatewiseComponent } from './statewise/statewise.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { AuthGuard } from './auth.guard'
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   {
     path:"State-wise-details",
     component:StatewiseComponent,
+    canActivate:[AuthGuard]
     
   },
   {
