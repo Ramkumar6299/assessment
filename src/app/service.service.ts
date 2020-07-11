@@ -21,6 +21,10 @@ export class ServiceService {
     return this.http.post("https://zen-user-api.herokuapp.com/users/authenticate",data);
   }
 
+  check():Observable<any>
+  {
+    return this.http.get("https://zen-user-api.herokuapp.com/users/authenticate");
+  }
 
   
 
