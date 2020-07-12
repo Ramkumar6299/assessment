@@ -20,6 +20,7 @@ import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { DouhgnutChartComponent } from './douhgnut-chart/douhgnut-chart.component';
 import { StatewiseComponent } from './statewise/statewise.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RadarChartComponent } from './radar-chart/radar-chart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     PieChartComponent,
     DouhgnutChartComponent,
     StatewiseComponent,
-    NavBarComponent
+    NavBarComponent,
+    RadarChartComponent
   ],
   imports: [
     BrowserModule,
