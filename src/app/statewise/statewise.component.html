@@ -19,7 +19,7 @@
             <th>Deceased</th>
           </tr>
           <tr class="table table-hover table-dark" *ngFor="let tab of tablearray;let i=index">
-            <td>{{tab.states}}</td>
+            <td><input type="submit"  value="{{tab.states}}" routerLink="State-wise-component/{{tab.states}}"></td>
             <td>{{tab.confirmed}}</td>
             <td>{{tab.active}}</td>
             <td>{{tab.recovered}}</td>

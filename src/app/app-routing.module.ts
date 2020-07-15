@@ -8,6 +8,7 @@ import { StatewiseComponent } from './statewise/statewise.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { AuthGuard } from './auth.guard'
+import { StateWiseDetailsComponent } from './state-wise-details/state-wise-details.component';
 
 
 const routes: Routes = [
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:"State-wise-details/week",
     component:PieChartComponent
+  },
+  {
+    path:"State-wise-details/State-wise-component/:name",
+    component:StateWiseDetailsComponent
   }
 ];
 

@@ -21,6 +21,7 @@ import { DouhgnutChartComponent } from './douhgnut-chart/douhgnut-chart.componen
 import { StatewiseComponent } from './statewise/statewise.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
+import { StateWiseDetailsComponent } from './state-wise-details/state-wise-details.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { RadarChartComponent } from './radar-chart/radar-chart.component';
     DouhgnutChartComponent,
     StatewiseComponent,
     NavBarComponent,
-    RadarChartComponent
+    RadarChartComponent,
+    StateWiseDetailsComponent
   ],
   imports: [
     BrowserModule,
